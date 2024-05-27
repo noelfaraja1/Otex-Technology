@@ -1,12 +1,9 @@
-document.querySelector('.first-button').addEventListener('click', function () {
+document.addEventListener('DOMContentLoaded', () => {
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
 
-    document.querySelector('.animated-icon1').classList.toggle('open');
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        navLinks.classList.toggle('active');
     });
-    document.querySelector('.second-button').addEventListener('click', function () {
-    
-    document.querySelector('.animated-icon2').classList.toggle('open');
-    });
-    document.querySelector('.third-button').addEventListener('click', function () {
-    
-    document.querySelector('.animated-icon3').classList.toggle('open');
-    });
+});
